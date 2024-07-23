@@ -1,4 +1,4 @@
-markdown
+
 # WebSocket Benchmarking Tool
 
 This tool allows you to benchmark WebSocket endpoints with multiple test scenarios. You can provide the test scenarios either through a YAML configuration file or via command-line parameters.

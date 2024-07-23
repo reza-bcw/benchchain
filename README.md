@@ -1,6 +1,4 @@
-Sure, here's a `README.md` file for using the WebSocket Benchmarking Tool script:
-
-```markdown
+markdown
 # WebSocket Benchmarking Tool
 
 This tool allows you to benchmark WebSocket endpoints with multiple test scenarios. You can provide the test scenarios either through a YAML configuration file or via command-line parameters.
@@ -14,7 +12,7 @@ This tool allows you to benchmark WebSocket endpoints with multiple test scenari
 
 You can install the required libraries using pip:
 
-```sh
+
 pip install websockets tqdm pyyaml
 ```
 

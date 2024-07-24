@@ -42,7 +42,7 @@ scenarios:
 Run the script with the configuration file:
 
 ```sh
-python benchmark.py -c config.yaml
+python main.py -c config.yaml
 ```
 
 ### Using Command-Line Parameters
@@ -50,13 +50,13 @@ python benchmark.py -c config.yaml
 Alternatively, you can provide individual parameters via the command line:
 
 ```sh
-python benchmark.py --url "wss://example.url" -t 5 -u 2 -w 1 -m "eth_subscribe"
+python main.py --url "wss://example.url" -t 5 -u 2 -w 1 -m "eth_subscribe"
 ```
 
 ### Parameters
 
 - `-c, --config`: Path to the YAML configuration file.
-- `--url`: WebSocket URL to test.
+- `--url`: WebSocket/Http URL to test.
 - `-t, --time`: Duration of the test in minutes.
 - `-u, --users`: Number of concurrent users.
 - `-w, --workers`: Number of workers.
@@ -66,7 +66,7 @@ python benchmark.py --url "wss://example.url" -t 5 -u 2 -w 1 -m "eth_subscribe"
 
 The script will generate a `metrics_statistics.csv` file with the results of the test scenarios. The CSV file will contain the following columns:
 
-- `ws_url`: The WebSocket URL tested.
+- `ws_url`: The URL tested.
 - `method`: The Web3 method used.
 - `num_users`: Number of concurrent users.
 - `num_workers`: Number of workers.
@@ -99,13 +99,13 @@ scenarios:
 ### Running with Configuration File
 
 ```sh
-python benchmark.py -c config.yaml
+python main.py -c config.yaml
 ```
 
 ### Running with Command-Line Parameters
 
 ```sh
-python benchmark.py --url "wss://url" -t 5 -u 2 -w 1 -m "eth_subscribe"
+python main.py --url "wss://url" -t 5 -u 2 -w 1 -m "eth_subscribe"
 ```
 
 ## License

@@ -31,7 +31,7 @@ scenarios:
     users: 2
     workers: 1
     method: "eth_subscribe"
-  - url: "wss://url2"
+  - url: "http://url2"
     duration: 5
     users: 2
     workers: 1
@@ -89,7 +89,7 @@ scenarios:
     users: 2
     workers: 1
     method: "eth_subscribe"
-  - url: "wss://url2"
+  - url: "http/s://url2"
     duration: 5
     users: 2
     workers: 1
